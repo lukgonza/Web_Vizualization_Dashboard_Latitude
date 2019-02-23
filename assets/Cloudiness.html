@@ -1,0 +1,287 @@
+<p>
+    &lt;!DOCTYPE html&gt;
+</p>
+<p>
+    &lt;html&gt;
+</p>
+<p>
+    &lt;head&gt;
+</p>
+<p>
+    &lt;meta charset="utf-8" /&gt;
+</p>
+<p>
+    &lt;title&gt;Cloudiness vs. Latitude&lt;/title&gt;
+</p>
+<p>
+    &lt;link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"&gt;
+</p>
+<p>
+    &lt;link rel="stylesheet" type="text/css" media="screen"
+    href="styles.css"/&gt;
+</p>
+<p>
+    &lt;script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"&gt;&lt;/script&gt;
+</p>
+<p>
+    &lt;script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"&gt;&lt;/script&gt;
+</p>
+<p>
+    &lt;script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"&gt;&lt;/script&gt;
+</p>
+<p>
+    &lt;/head&gt;
+</p>
+<p>
+    &lt;body&gt;
+</p>
+<p>
+    &lt;nav class="navbar navbar-default"&gt;
+</p>
+<p>
+    &lt;div class="container-fluid"&gt;
+</p>
+<p>
+    &lt;div class="navbar-header"&gt;
+</p>
+<p>
+    &lt;button type="button" class="navbar-toggle collapsed"
+    data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+    aria-expanded="false"&gt;
+</p>
+<p>
+    &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+</p>
+<p>
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+</p>
+<p>
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+</p>
+<p>
+    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+</p>
+<p>
+    &lt;/button&gt;
+</p>
+<p>
+    &lt;div class="col-md-1"&gt;&lt;/div&gt;
+</p>
+<p>
+    &lt;div class="col-md-1"&gt;&lt;/div&gt;
+</p>
+<p>
+    &lt;div class="col-md-1"&gt;&lt;/div&gt;
+</p>
+<p>
+    &lt;a class="navbar-brand" href="index.html"&gt;
+</p>
+<p>
+    &lt;ul class="nav navbar-nav navbar-right"&gt;
+</p>
+<p>
+    &lt;span class="nav-color"&gt;Latitude&lt;/span&gt;
+</p>
+<p>
+    &lt;/a&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;div class="collapse navbar-collapse"
+    id="bs-example-navbar-collapse-1"&gt;
+</p>
+<p>
+    &lt;ul class="nav navbar-nav navbar-right"&gt;
+</p>
+<p>
+    &lt;li class="dropdown"&gt;
+</p>
+<p>
+    &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+    aria-haspopup="true" aria-expanded="false"&gt;Plots &lt;span
+    class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+</p>
+<p>
+    &lt;ul class="dropdown-menu"&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="temperature.html"&gt;Max
+    Temperature&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="humidity.html"&gt;Humidity&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="cloudiness.html"&gt;Cloudiness&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="wind.html"&gt;Wind Speed&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;/ul&gt;
+</p>
+<p>
+    &lt;/li&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="comparisons.html"&gt;Comparisons&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;li&gt;&lt;a href="data.html"&gt;Data&lt;/a&gt;&lt;/li&gt;
+</p>
+<p>
+    &lt;/ul&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/nav&gt;
+</p>
+<p>
+    &lt;div class="container"&gt;
+</p>
+<p>
+    &lt;div class="row"&gt;
+</p>
+<p>
+    &lt;div class="col-md-7"&gt;
+</p>
+<p>
+    &lt;div class="main-box"&gt;
+</p>
+<p>
+    &lt;h1 class="main-pg-header"&gt;Cloudiness vs. Latitude&lt;/h1&gt;
+</p>
+<p>
+    &lt;hr&gt;
+</p>
+<p>
+    &lt;div class="summary txt"&gt;
+</p>
+<p>
+    &lt;img id="main" src="images/Cloudiness_v_Latitude.png", alt="Cloudiness
+    vs. Latitude"&gt;
+</p>
+<p>
+    &lt;p&gt;
+</p>
+<p>
+    Cloudiness is mostly consistent across different latitudes.
+</p>
+<p>
+    We see no direct correlation between cloudiness and latitude.
+</p>
+<p>
+    &lt;/p&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;div class="col-md-5"&gt;
+</p>
+<p>
+    &lt;div class= "col-md-5"&gt;
+</p>
+<p>
+    &lt;div class= "side-box"&gt;
+</p>
+<p>
+    &lt;h2&gt;Visualizations&lt;/h2&gt;
+</p>
+<p>
+    &lt;hr&gt;
+</p>
+<p>
+    &lt;div class= "sidebar"&gt;
+</p>
+<p>
+    &lt;a href= "temperature.html"&gt;&lt;img id= "img-temp" src=
+    "images/MaxTemp_v_Latitude.png", alt= "Temp vs. Latitude"&gt;&lt;/a&gt;
+</p>
+<p>
+    &lt;a href= "humidity.html"&gt;&lt;img id= "img-hum" src=
+    "images/Humidity_v_Latitude.png", alt= "Humidity vs.
+    Latitude"&gt;&lt;/a&gt;
+</p>
+<p>
+    &lt;a href= "cloudiness.html"&gt;&lt;img id= "img-clo" src=
+    "images/Cloudiness_v_Latitude.png", alt= "Cloudiness vs.
+    Latitude"&gt;&lt;/a&gt;
+</p>
+<p>
+    &lt;a href= "wind.html"&gt;&lt;img id= "img-win" src=
+    "images/WindSpeed_v_Latitude.png", alt= "Wind Speed vs.
+    Latitude"&gt;&lt;/a&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;div class= "container-fluid bottom-footer page-footer"&gt;
+</p>
+<p>
+    &lt;div class= "row"&gt;
+</p>
+<p>
+    &lt;div class= "col text-center"&gt;&lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/div&gt;
+</p>
+<p>
+    &lt;/body&gt;
+</p>
+<p>
+    &lt;/html&gt;
+</p>
