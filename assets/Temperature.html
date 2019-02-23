@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Max Temperature vs. Latitude</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+        
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"></div>
+                    <a class="navbar-brand" href="index.html">
+                    <ul class="nav navbar-nav navbar-right">
+                      <span class="nav-color">Latitude</span>
+                    </a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="temperature.html">Max Temperature</a></li>
+                      <li><a href="humidity.html">Humidity</a></li>
+                      <li><a href="cloudiness.html">Cloudiness</a></li>
+                      <li><a href="wind.html">Wind Speed</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="comparisons.html">Comparisons</a></li>
+                  <li><a href="data.html">Data</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="main-box">
+                            <h1 class="main-pg-header">Max Temperature vs. Latitude</h1>
+                            <hr>
+                            <div class="summary txt">
+                                <img id="main" src="images/MaxTemp_v_Latitude.png", alt="Temperature vs. Latitude">
+                                <p>
+                                    The temperature increases for cities situated near the equator.    
+                                    And there is a decrease in temperature for cities north of the equator.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                            <div class= "col-md-5">
+                                    <div class= "side-box">
+                                    <h2>Visualizations</h2>
+                                    <hr>
+                                    <div class= "sidebar">
+                                        <a href= "temperature.html"><img id= "img-temp" src= "images/MaxTemp_v_Latitude.png", alt= "Temp vs. Latitude"></a>
+                                        <a href= "humidity.html"><img id= "img-hum" src= "images/Humidity_v_Latitude.png", alt= "Humidity vs. Latitude"></a>
+                                        <a href= "cloudiness.html"><img id= "img-clo" src= "images/Cloudiness_v_Latitude.png", alt= "Cloudiness vs. Latitude"></a>
+                                        <a href= "wind.html"><img id= "img-win" src= "images/WindSpeed_v_Latitude.png", alt= "Wind Speed vs. Latitude"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class= "container-fluid bottom-footer page-footer">
+                    <div class= "row">
+                        <div class= "col text-center"></div>
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>
